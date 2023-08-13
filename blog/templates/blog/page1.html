@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'styles.css' %}">
+  <title>Page 1</title>
+</head>
+<body>
+  <header>
+    <h1>Page 1 Content</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="{% url 'index' %}">Home</a></li>
+      <li><a href="{% url 'page2' %}">Page 2</a></li>
+    </ul>
+  </nav>
+  <main>
+    <p>This is the content of Page 1.</p>
+  </main>
+ 
+</body>
+</html>
